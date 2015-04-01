@@ -1,6 +1,6 @@
-<form action="/west/investigate2/" method="post">
+<form action="/west/investigate/" method="post">
   {% csrf_token %}
-  <input type="text" name="staff"/>
+  {{ form.as_p }}
   <input type="submit" value="Submit"/>
 </form>
 
